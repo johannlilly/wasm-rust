@@ -3,7 +3,8 @@
 // wasm-pack uses wasm-bindgen to provide a bridge between the types of JavaScript and Rust. It allows JavaScript to call a Rust API with a string, or a Rust function to catch a JavaScript exception
 use wasm_bindgen::prelude::*;
 
-#[wasm_bindgen]
+#[wasm_bindgen] // attribute
+// extern keyword indicates functions to be shared outside of rust proper
 extern {
     pub fn alert(s: &str);
 }
