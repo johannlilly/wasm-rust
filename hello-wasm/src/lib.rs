@@ -1,4 +1,5 @@
 // use wasm-bindgen to commmunicate between Rust and JavaScript
+// import code from a library into you code
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
